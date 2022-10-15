@@ -8,6 +8,9 @@ const Header = () => {
         <Link to="/" className="btn btn-ghost normal-case text-xl">
           daisyUI
         </Link>
+        <Link to="/home" className="btn btn-ghost normal-case text-xl">
+          Home
+        </Link>
         <Link to="/login" className="btn btn-ghost normal-case text-xl">
           Login
         </Link>
