@@ -47,13 +47,15 @@ const Header = () => {
           />
         </svg>
         {user?.email && (
-          <Link to="/profile" className="btn btn-ghost normal-case text-xl">
-            Welcome {user.email}
-          </Link>
+          <>
+            <Link to="/profile" className="btn btn-ghost normal-case text-xl">
+              Welcome {user.email}
+            </Link>
+            <button onClick={handleSignOut} className="btn btn-sm">
+              Log out
+            </button>
+          </>
         )}
-        <button onClick={handleSignOut} className="btn btn-sm">
-          Log out
-        </button>
       </div>
     </div>
   );
