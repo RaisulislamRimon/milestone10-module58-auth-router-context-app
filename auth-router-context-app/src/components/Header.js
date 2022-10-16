@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div>
       <div className="navbar bg-primary text-primary-content">
-        <button className="btn bg-cyan-600 border-none hover:bg-cyan-500 normal-case text-xl">
+        <button className="btn bg-cyan-500 text-sky-900 border-none hover:bg-cyan-500 normal-case text-xl">
           Auth Router Context
         </button>
         <Link to="/" className="btn btn-ghost normal-case text-xl">
