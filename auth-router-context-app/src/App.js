@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Register from "./components/Register";
 import Home from "./components/Home";
 import NotFound from "./components/NotFound";
+import Orders from "./components/Orders";
+import PrivateRoute from "./routes/PrivateRoute";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -24,6 +26,14 @@ const App = () => {
         {
           path: "/register",
           element: <Register />,
+        },
+        {
+          path: "/orders",
+          element: (
+            <PrivateRoute>
+              <Orders />
+            </PrivateRoute>
+          ),
         },
         {
           path: "*",
