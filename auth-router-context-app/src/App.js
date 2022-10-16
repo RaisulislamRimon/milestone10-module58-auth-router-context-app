@@ -5,6 +5,7 @@ import Main from "./layouts/Main";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Register from "./components/Register";
 import Home from "./components/Home";
+import NotFound from "./components/NotFound";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const App = () => {
         {
           path: "/register",
           element: <Register />,
+        },
+        {
+          path: "*",
+          element: <NotFound />,
         },
       ],
     },
