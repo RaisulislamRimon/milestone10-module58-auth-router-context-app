@@ -39,6 +39,7 @@ const Header = () => {
             Welcome {user.email}
           </Link>
         )}
+        <button className="btn btn-sm">Sign out</button>
       </div>
     </div>
   );
