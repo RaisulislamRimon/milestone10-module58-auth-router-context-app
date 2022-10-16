@@ -13,16 +13,16 @@ const App = () => {
       element: <Main />,
       children: [
         {
+          path: "/",
+          element: <Home />,
+        },
+        {
           path: "/login",
           element: <Login />,
         },
         {
           path: "/register",
           element: <Register />,
-        },
-        {
-          path: "/home",
-          element: <Home />,
         },
       ],
     },

@@ -5,10 +5,10 @@ const Header = () => {
   return (
     <div>
       <div className="navbar bg-primary text-primary-content">
+        <button className="btn bg-cyan-600 border-none hover:bg-cyan-500 normal-case text-xl">
+          Auth Router Context
+        </button>
         <Link to="/" className="btn btn-ghost normal-case text-xl">
-          daisyUI
-        </Link>
-        <Link to="/home" className="btn btn-ghost normal-case text-xl">
           Home
         </Link>
         <Link to="/login" className="btn btn-ghost normal-case text-xl">
